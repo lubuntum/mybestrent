@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
-import { HomePage } from './components/HomePage';
-import { ApartamentPage } from './components/apartament/ApartamentPage';
+import { HomePage } from './components/home/HomePage';
+import { ApartamentPage } from './components/apartament/details/ApartamentPage';
 
 function App() {
   return (
