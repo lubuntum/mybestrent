@@ -1,0 +1,40 @@
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-login {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.btn-login:hover {
+    background: white;
+    color: #4a6fa5;
+}
+.btn-signup {
+    background: #ff7e5f;
+    border: 2px solid #ff7e5f;
+    color: white;
+}
+.btn-signup:hover {
+    background: #ff6b4a;
+    border-color: #ff6b4a;
+}
+
+.search-btn {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.search-brn:hover {
+    background: #ff6b4a;
+}
