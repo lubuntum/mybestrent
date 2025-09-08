@@ -1,0 +1,205 @@
+.documentsPage {
+  padding: 60px 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.documentsHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.documentsHeader h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.documentsHeader p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.documentsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.documentSection h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4a6fa5;
+}
+
+.documentsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.documentCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #4a6fa5;
+}
+
+.documentCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.documentCard h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.documentCard p {
+  color: #6c757d;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.downloadLink {
+  display: inline-block;
+  background: linear-gradient(135deg, #4a6fa5 0%, #2c3e50 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.downloadLink:hover {
+  background: linear-gradient(135deg, #2c3e50 0%, #4a6fa5 100%);
+  transform: translateY(-2px);
+}
+
+.infoSection {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.infoSection h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.infoCard {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #ff7e5f;
+}
+
+.infoCard h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.infoCard p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.contactSection {
+  text-align: center;
+  background: linear-gradient(135deg, #4a6fa5 0%, #2c3e50 100%);
+  color: white;
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.contactSection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contactSection p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.contactInfo p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .documentsHeader h1 {
+    font-size: 2rem;
+  }
+  
+  .documentsList {
+    grid-template-columns: 1fr;
+  }
+  
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .documentSection h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contactSection {
+    padding: 30px 20px;
+  }
+  
+  .contactSection h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .documentsPage {
+    padding: 40px 0;
+  }
+  
+  .documentsHeader h1 {
+    font-size: 1.8rem;
+  }
+  
+  .documentCard {
+    padding: 20px;
+  }
+  
+  .infoSection {
+    padding: 25px;
+  }
+}
