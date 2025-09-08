@@ -43,3 +43,8 @@ nav ul li a {
     display: flex;
     gap: 15px;
 }
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
