@@ -21,7 +21,7 @@
 }
 
 .search-box {
-    display: flex;
+    display: none;
     max-width: 700px;
     margin: 0 auto;
     background: white;
@@ -50,3 +50,8 @@
     margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

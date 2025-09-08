@@ -5,16 +5,17 @@ import { Button } from "../ui/button/Button"
 import styles from "./home.module.css"
 import {apartments} from "../../data/apartments.ts"
 import { ApartmentCard } from "../apartament/card/ApartmentCard.tsx"
+import { Footer } from "../footer/Footer.jsx"
 export const HomePage = () => {
     const navigate = useNavigate()
     return (
         <>
-        <Header />
+        
         <div className="container">
             <main>
                 <div className="container">
                     <section className={styles.hero}>
-                        <h1>Найдите подходящую комнату имеено для вас</h1>
+                        <h1>Посуточная аренда квартир в Черногорске</h1>
                         <p>Подберите удобный для вас вариант с максимально удобными условиями - местоположение, цена и многое другое</p>
                         <div className={styles["search-box"]}>
                             <Input className={"search-input"} type = "text" placeholder = "Введите улицу или цену"/>
@@ -34,8 +35,7 @@ export const HomePage = () => {
                 </section>
             </main>
         </div>
-            
-            
+        
         </>
     )
 }
