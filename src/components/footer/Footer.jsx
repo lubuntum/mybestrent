@@ -1,6 +1,7 @@
 import styles from "./footer.module.css"
 import {ReactComponent as Tg} from "../../res/icons/tg_icon.svg"
 import {ReactComponent as Vk} from "../../res/icons/vk_icon.svg"
+import {ReactComponent as Wh} from "../../res/icons/whats.svg"
 export const Footer = ({footerRef}) => {
 
     return (<footer>
@@ -15,7 +16,7 @@ export const Footer = ({footerRef}) => {
                     <ul>
                         <li><a href="https://t.me/posutochnohakasiya">Мы в телеграмм <Tg className={styles["footer-icon"]}/> </a></li>
                         <li><a href="">Мы в ВК <Vk className={styles["footer-icon"]}/></a></li>
-                        <li><a href="">Мы в WatsApp <Vk className={styles["footer-icon"]}/></a></li>
+                        <li><a href="">Мы в WatsApp <Wh className={styles["footer-icon"]}/></a></li>
                     </ul>
                 </div>
                 <div className={styles["footer-section"]}>
