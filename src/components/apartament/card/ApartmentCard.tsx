@@ -1,12 +1,15 @@
+import { useNavigate } from "react-router";
 import {Apartment} from "../../../types/apartment"
 import styles from "./card.module.css"
+import { ROUTES } from "../../../AppRoutes";
 interface ApartmentCardProps {
     apartment: Apartment;
 }
 
 export const ApartmentCard = ({ apartment }: ApartmentCardProps) => {
+    const navigate = useNavigate()
     return (
-        <div className={styles["room-card"]}>
+        <div onClick = {() => {navigate(ROUTES.APARTAMENT, {state: apartment})}} className={styles["room-card"]}>
             <div className={styles["room-image-container"]}>
                 <img src = {apartment.imageTitlePath} alt = {apartment.address}/>
             </div>
