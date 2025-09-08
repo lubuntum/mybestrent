@@ -2,7 +2,8 @@ import { useNavigate } from "react-router"
 import styles from "./header.module.css"
 import { Button } from "../ui/button/Button"
 import {ROUTES} from "../../AppRoutes"
-export const Header = () => {
+import { useRef } from "react"
+export const Header = ({scrollToFooter}) => {
     const navigate = useNavigate()
     return (<>
         <header>
@@ -13,7 +14,8 @@ export const Header = () => {
             <nav>
                 <ul>
                     <li onClick={()=>{navigate(ROUTES.HOME)}}>Главная</li>
-                    <li onClick={() => {navigate(ROUTES.ABOUT)}}>О нас</li>
+                    <li onClick={() => {navigate(ROUTES.DOCUMENT)}}>Документы</li>
+                    <li onClick={scrollToFooter}>Контакты</li>
                 </ul>
             </nav>
         </div>
