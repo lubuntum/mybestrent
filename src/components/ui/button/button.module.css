@@ -40,9 +40,14 @@
 }
 .btn-contact {
     padding: 10px 25px;
-    background-color: rgb(2, 209, 92);
+    background-color: rgb(55, 181, 110);
     color: white;
     font-size: 1.1rem;
     border: none;
-    width: 100%;
+    width: 350px;
+}
+@media (max-width: 1280px) {
+    .btn-contact {
+        width: 100%;
+    }
 }
