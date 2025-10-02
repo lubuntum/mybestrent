@@ -5,7 +5,7 @@ import { ROUTES } from "../../../AppRoutes";
 interface ApartmentCardProps {
     apartment: Apartment;
 }
-
+//<p className={styles["multi-line-truncate"]}>{apartment.description}</p>
 export const ApartmentCard = ({ apartment }: ApartmentCardProps) => {
     const navigate = useNavigate()
     return (
@@ -16,7 +16,7 @@ export const ApartmentCard = ({ apartment }: ApartmentCardProps) => {
             <div className={styles["room-details"]}>
                 <h3>{apartment.address}</h3>
                 <div className={styles["room-price"]}>₽{apartment.price.toLocaleString()}</div>
-                <p>{apartment.description}</p>
+
                 <div className={styles["room-features"]}>
                     {apartment.features.map((feature, index) => (
                         <span key={index} className={styles["room-feature"]}>

@@ -49,3 +49,12 @@
     align-items: center;
     color: #666;
 }
+
+.multi-line-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
