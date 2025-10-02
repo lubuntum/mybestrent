@@ -1,0 +1,208 @@
+.amenitiesCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardHeader {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cardHeader h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.cardContent {
+  padding: 2rem;
+}
+
+/* Amenities Grid */
+.amenitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.amenityItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.amenityItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.amenityIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.amenityText h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.amenityText p {
+  margin: 0;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Service Section */
+.serviceSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #ffd43b;
+}
+
+.serviceIcon {
+  font-size: 2.5rem;
+}
+
+.serviceText h3 {
+  margin: 0 0 0.5rem 0;
+  color: #e67700;
+}
+
+.serviceText p {
+  margin: 0;
+  color: #8d6e00;
+  line-height: 1.5;
+}
+
+/* Conditions Section */
+.conditionsSection {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.conditionsSection h3 {
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.conditionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.conditionItem {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.conditionTime, .conditionAmount, .conditionAge {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.conditionTime {
+  color: #667eea;
+}
+
+.conditionAmount {
+  color: #51cf66;
+}
+
+.conditionAge {
+  color: #ff6b6b;
+}
+
+.conditionText {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.conditionNote {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #868e96;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .amenitiesCard {
+    margin: 1rem;
+    border-radius: 12px;
+  }
+  
+  .cardHeader {
+    padding: 1.5rem 1rem;
+  }
+  
+  .cardHeader h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cardContent {
+    padding: 1.5rem 1rem;
+  }
+  
+  .amenitiesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .serviceSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .conditionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .conditionsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenityItem {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .amenityIcon {
+    align-self: center;
+  }
+}
