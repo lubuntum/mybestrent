@@ -9,7 +9,7 @@ export const Header = ({scrollToFooter}) => {
         <header>
         <div class={`container ${styles['header-container']}`}>
             <div class={styles.logo}>
-                <i class="fas fa-home"></i> Doe<span>Rent</span>
+                <i class="fas fa-home"></i>Аренда<span>Посуточно</span>
             </div>
             <nav>
                 <ul>
