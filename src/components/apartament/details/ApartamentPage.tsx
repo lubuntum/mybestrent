@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router"
-import {useEffect, useState} from "react"
+import {useEffect, useLayoutEffect, useState} from "react"
 import { Apartment } from "../../../types/apartment"
 import { Header } from "../../header/Header"
 import { Footer } from "../../footer/Footer"
@@ -17,6 +17,9 @@ export const ApartamentPage = () => {
     const [currentImg, setCurrentImg] = useState<string>()
     const [currentIndex, setCurrentIndex] = useState<number>(0)
     const [roomLocation, setRoomLocation] = useState<Location | null>()
+    useLayoutEffect(()=> {
+        window.scrollTo(0, 0)
+    }, [])
     useEffect(()=>{
         if (!location.state) navigate(-1)
         setApartment(location.state)

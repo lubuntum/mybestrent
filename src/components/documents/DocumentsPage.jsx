@@ -1,7 +1,11 @@
+import { useLayoutEffect } from "react";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import styles from "./documents.module.css"
 export const DocumentsPage = () => {
+  useLayoutEffect(()=>{
+    window.scrollTo(0,0)
+  }, [])
   return (
     <>
       <div className={styles.documentsPage}>
@@ -18,26 +22,18 @@ export const DocumentsPage = () => {
                 <div className={styles.documentCard}>
                   <h3>Договор аренды</h3>
                   <p>Типовой договор аренды жилого помещения</p>
-                  <a href="/documents/rental-agreement.pdf" className={styles.downloadLink}>
+                  <a href="/documents/Пример договора.pdf" className={styles.downloadLink}>
                     📄 Скачать договор.pdf
                   </a>
                 </div>
-
                 <div className={styles.documentCard}>
-                  <h3>Акт приема-передачи</h3>
-                  <p>Акт передачи имущества при заселении</p>
-                  <a href="/documents/acceptance-act.pdf" className={styles.downloadLink}>
+                  <h3>Акт выполненных работ</h3>
+                  <p>Акт выполненных работ пример</p>
+                  <a href="/documents/Акт выполненных работ пример.pdf" className={styles.downloadLink}>
                     📄 Скачать акт.pdf
                   </a>
                 </div>
 
-                <div className={styles.documentCard}>
-                  <h3>Инвентаризационная опись</h3>
-                  <p>Опись имущества и мебели в квартире</p>
-                  <a href="/documents/inventory-list.pdf" className={styles.downloadLink}>
-                    📄 Скачать опись.pdf
-                  </a>
-                </div>
               </div>
             </section>
 
@@ -46,24 +42,16 @@ export const DocumentsPage = () => {
               <div className={styles.documentsList}>
                 <div className={styles.documentCard}>
                   <h3>Правила проживания</h3>
-                  <p>Основные правила и условия аренды</p>
-                  <a href="/documents/house-rules.pdf" className={styles.downloadLink}>
-                    📄 Скачать правила.pdf
-                  </a>
-                </div>
-
-                <div className={styles.documentCard}>
-                  <h3>Инструкция по эксплуатации</h3>
-                  <p>Работа с техникой и оборудованием в квартире</p>
-                  <a href="/documents/equipment-manual.pdf" className={styles.downloadLink}>
-                    📄 Скачать инструкцию.pdf
+                  <p>Правила проживания и эксплуатации</p>
+                  <a href="/documents/Правила проживания.pdf" className={styles.downloadLink}>
+                    📄 Скачать акт.pdf
                   </a>
                 </div>
 
                 <div className={styles.documentCard}>
                   <h3>Экстренные контакты</h3>
                   <p>Телефоны экстренных служб и аварийных служб</p>
-                  <a href="/documents/emergency-contacts.pdf" className={styles.downloadLink}>
+                  <a href="/documents/Экстренные службы.pdf" className={styles.downloadLink}>
                     📄 Скачать контакты.pdf
                   </a>
                 </div>
@@ -79,18 +67,18 @@ export const DocumentsPage = () => {
                 </div>
 
                 <div className={styles.infoCard}>
-                  <h3>Акт приема-передачи</h3>
-                  <p>Фиксирует состояние квартиры и имущества на момент заселения. Помогает избежать споров при выселении.</p>
-                </div>
-
-                <div className={styles.infoCard}>
-                  <h3>Инвентаризационная опись</h3>
-                  <p>Подробное описание всего имущества в квартире. Необходима для контроля сохранности мебели и техники.</p>
+                  <h3>Акт выполненных работ</h3>
+                  <p>Отображает все выполненные или оказанные услуг исполнителем в полном обьеме.</p>
                 </div>
 
                 <div className={styles.infoCard}>
                   <h3>Правила проживания</h3>
                   <p>Устанавливают порядок пользования общим имуществом, тишину в ночное время и другие важные моменты.</p>
+                </div>
+
+                 <div className={styles.infoCard}>
+                  <h3>Экстренные контакты</h3>
+                  <p>Номера на все различные чрезвычайные ситуации.</p>
                 </div>
               </div>
             </section>
@@ -99,7 +87,7 @@ export const DocumentsPage = () => {
               <h2>Нужна помощь с документами?</h2>
               <p>Мы поможем вам разобраться с любыми вопросами</p>
               <div className={styles.contactInfo}>
-                <p>Email: documents@apartment-rent.ru</p>
+                <p>Email: marinammmaa@mail.ru</p>
                 <p>Телефон: 8 (993) 033-83-50</p>
                 <p>Время работы: Пн-Пт с 9:00 до 18:00</p>
               </div>

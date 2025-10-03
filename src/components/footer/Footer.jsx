@@ -15,16 +15,16 @@ export const Footer = ({footerRef}) => {
                     <h3>Другие источники</h3>
                     <ul>
                         <li><a href="https://t.me/posutochnohakasiya">Мы в телеграмм <Tg className={styles["footer-icon"]}/> </a></li>
-                        <li><a href="">Мы в ВК <Vk className={styles["footer-icon"]}/></a></li>
-                        <li><a href="">Мы в WatsApp <Wh className={styles["footer-icon"]}/></a></li>
+                        <li><a href="https://vk.com/svobodnochernogorsk">Мы в ВК <Vk className={styles["footer-icon"]}/></a></li>
+                        <li><a href={`https://wa.me/89930338350?text=У меня есть вопрос!`}>Мы в WatsApp <Wh className={styles["footer-icon"]}/></a></li>
                     </ul>
                 </div>
                 <div className={styles["footer-section"]}>
                     <h3>Свяжитесь с нами</h3>
                     <ul>
-                        <li>Email: Почта</li>
-                        <li>По номеру: 8 (993) 033-83-50 Марина</li>
-                        <li>По номеру: 8 (902) 014-96-00 Дмитрий</li>
+                        <li>Email: marinammmaa@mail.ru</li>
+                        <li>По номеру: 89930338350 Марина</li>
+                        <li>По номеру: 89020149600 Дмитрий</li>
                     </ul>
                 </div>
             </div>
