@@ -19,6 +19,9 @@ section:last-child {
 .contact-info-header {
     display: none;
 }
+.contact-info-header button:last-child {
+    margin-top: 15px;
+}
 .contact-info-container{
     display: flex;
     padding: 0 20px;
@@ -27,8 +30,10 @@ section:last-child {
     align-self: flex-start;
 }
 .contact-info{
-    display: flex;
-    width: 350px;
+    
+}
+.contact-info button:last-child{
+    margin-top: 15px;
 }
 .room-info {
     display: flex;

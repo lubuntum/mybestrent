@@ -70,7 +70,10 @@ export const ApartamentPage = () => {
                     <h2>{apartment?.price}₽ за сутки</h2>
                     <Button className={"btn-contact"} 
                         children={<div style={{display:"flex", flexDirection:"column"}}
-                        onClick={() => handleCall("89143433412")}><p>Свяжитесь с нами</p> <p>8 (914) 343-34-12</p></div>}/>
+                        onClick={() => handleCall("89930338350")}><p>Свяжитесь с нами  Марина</p> <p>8 (993) 033-83-50</p> </div>}/>
+                    <Button className={"btn-contact"} 
+                        children={<div style={{display:"flex", flexDirection:"column"}}
+                        onClick={() => handleCall("89020149600")}><p>Свяжитесь с нами Дмитрий</p> <p>8 (902) 014-96-00</p> </div>}/>
                 </div>
                 <section>
                     <div className={styles["main-info-container"]}>
@@ -141,10 +144,16 @@ export const ApartamentPage = () => {
             
 
             <div className={styles["contact-info-container"]}>
-                <div className="contact-info">
+                <div className={styles["contact-info"]}>
                     <h2>{apartment?.price}₽ за сутки</h2>
                     <Button className={"btn-contact"} 
-                        children={<div style={{display:"flex", flexDirection:"column"}}><p>Свяжитесь с нами</p> <p>8 (914) 343-34-12</p></div>}/>
+                        children={<div style={{display:"flex", flexDirection:"column"}}
+                        onClick={() => handleCall("89930338350")}>
+                            <p>Свяжитесь с нами Марина</p> <p>8 (993) 033-83-50</p>
+                            </div>}/>
+                    <Button className={"btn-contact"} 
+                        children={<div style={{display:"flex", flexDirection:"column"}}
+                        onClick={() => handleCall("89020149600")}><p>Свяжитесь с нами Дмитрий</p> <p>8 (902) 014-96-00</p> </div>}/>
 
                 </div>
                 
