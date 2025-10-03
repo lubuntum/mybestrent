@@ -77,10 +77,10 @@
   align-items: center;
   gap: 1.5rem;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+  background:  linear-gradient(135deg, #e8f5e8, #d4edda);
   border-radius: 12px;
   margin-bottom: 2rem;
-  border-left: 4px solid #ffd43b;
+  border-left: 4px solid #28a745;
 }
 
 .serviceIcon {
@@ -89,12 +89,12 @@
 
 .serviceText h3 {
   margin: 0 0 0.5rem 0;
-  color: #e67700;
+  color: #2c3e50;
 }
 
 .serviceText p {
   margin: 0;
-  color: #8d6e00;
+  color: #6c757d;
   line-height: 1.5;
 }
 
