@@ -1,6 +1,4 @@
 import { useLayoutEffect } from "react";
-import { Footer } from "../footer/Footer";
-import { Header } from "../header/Header";
 import styles from "./documents.module.css"
 export const DocumentsPage = () => {
   useLayoutEffect(()=>{

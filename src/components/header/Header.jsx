@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router"
 import styles from "./header.module.css"
-import { Button } from "../ui/button/Button"
 import {ROUTES} from "../../AppRoutes"
-import { useRef } from "react"
 export const Header = ({scrollToFooter}) => {
     const navigate = useNavigate()
     return (<>

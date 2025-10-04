@@ -1,13 +1,10 @@
 import { useLocation, useNavigate } from "react-router"
 import {useEffect, useLayoutEffect, useState} from "react"
 import { Apartment } from "../../../types/apartment"
-import { Header } from "../../header/Header"
-import { Footer } from "../../footer/Footer"
 import styles from "./apartament.module.css"
 import {MapComponent} from "../location/MapComponent.tsx"
 import {Location} from "../../../types/location"
 import { Button } from "../../ui/button/Button.jsx"
-import { apartments } from "../../../data/apartments.ts"
 
 export const ApartamentPage = () => {
     const navigate = useNavigate()
@@ -23,20 +20,23 @@ export const ApartamentPage = () => {
     useEffect(()=>{
         if (!location.state) navigate(-1)
         setApartment(location.state)
-    }, [])
+    }, [location.state, navigate])
     useEffect(() => {
         //TODO 
         //При начале в изображениях найти индекс imageTitlePath и уже работать с ним
         //ImageTitlePath только позволяет понять начальную точку затем уже индексы решают и юзер
         setCurrentImg(apartment?.imageTitlePath)
-        console.log(apartment?.imagesPath.indexOf(apartment.imageTitlePath))
         setCurrentIndex(apartment?.imagesPath.indexOf(apartment.imageTitlePath) ?? 0)
-        setRoomLocation(getLocation())
+        if (!apartment || !apartment.cordinates || apartment.cordinates.length < 2)
+            setRoomLocation(null)
+        else setRoomLocation({
+            lat: apartment.cordinates[0],
+            lng: apartment.cordinates[1],
+            address: apartment.address,
+            label: apartment.address
+        })
     }, [apartment]);
-    const getLocation = ():Location | null => {
-        if (!apartment || !apartment.cordinates || apartment.cordinates.length < 2) return null
-        return {lat: apartment?.cordinates[0], lng: apartment?.cordinates[1], address: apartment?.address, label: apartment?.address}
-    }
+
     const handleCall = (number: String) => {
         const clearNumber = number.replace(/[^\d+]/g, '')
         if (clearNumber){
